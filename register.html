@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form | SistemKasir</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header class="card-header">
+                <h1>Register Form</h1>
+                <h2>SistemKasir</h2>
+            </header>
+            <hr class="divider">
+            <form action="register.php" method="post">
+                <!-- Username Field -->
+                <label for="">Username:</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                
+                <!-- Email Field -->
+                <label for="">Email:</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+
+                <!-- Password Field -->
+                <label for="">Password:</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" name="password" placeholder="Password" id="password">
+                </div>
+
+                <!-- Confirm Password Field -->
+                <label for="">Confirm Password:</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" id="confirmPassword">
+                </div>
+                
+                <!-- Show Password Checkbox -->
+                <div class="show-password">
+                    <input type="checkbox" id="showPassword" onclick="togglePassword()">
+                    <label for="showPassword">Show Password</label>
+                </div>
+                <button class="btn" type="submit" name="register">Register</button>
+            </form>
+            <p class="register-link">Already have an account? <a href="index.html">Login</a></p>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

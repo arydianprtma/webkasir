@@ -13,6 +13,10 @@ body {
     align-items: center;
     height: 100vh;
 }
+/* h2 {
+    text-align: center;
+    color: #ffffff;
+} */
 
 .container {
     width: 100%;
@@ -39,6 +43,12 @@ body {
 
 .card-header h1 {
     font-size: 1.8rem;
+    color: #ffffff; /* Warna teks */
+    margin: 0;
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
     color: #ffffff; /* Warna teks */
     margin: 0;
 }
